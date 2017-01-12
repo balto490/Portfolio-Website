@@ -5,24 +5,110 @@
 	<title>Brian Altman</title>
 	<link rel="stylesheet" type="text/css" href="style.css"></link>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
 </head>
 	
 <body>
-	<h1>Brian Altman</h1>
-	<h4>Developer</h4>
-	<nav id="socialnav">
+	<button class="c-hamburger c-hamburger--htx">
+ 		<span>toggle menu</span>
+	</button>
+	<nav id="main_nav">
+		<ul id="post_nav_bar">
+			<li><a href="#" class="scroll-link" data-id="about">About</a></li>
+			<li><a href="#" class="scroll-link" data-id="work">Work</a></li>
+			<li><a href="#" class="scroll-link" data-id="contact">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<!-- <nav id="socialnav">
 		<ul>
 			<li class="facebook"><a href="http://www.facebook.com"><img src="images/facebook.png"></a></li>
 			<li class="twitter"><a href="http://www.twitter.com"><img src="images/twitter.png"></a></li>
 			<li class="linkedin"><a href="http://www.linkedin.com"><img src="images/linkedin.png"></a></li>
 		</ul> 
-	<nav id="mainnav">
-		<ul>
-			<li class="about">About</li>
-			<li class="work">Work</li>
-			<li class="contact"><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
+	</nav> -->
+	<div id="title" class="page-section">
+		<h1 id="brian_altman">
+		<div class="top_letter">
+<!-- 		<div id="first_b">B</div>
+		<div id="first_i">i</div>
+		<div id="first_n">n</div> 
+		<div id="last_l">l</div>
+		<div id="last_m">m</div>
+		<div id="last_n">n</div> -->
+			<div>BRIAN</div>
+		</div>
+		<div class="bottom_letter">
+		<!-- <div id="first_r">r</div>
+		<div id="first_a">a</div>
+		<div id="last_a"> A</div>
+		<div id="last_t">t</div>
+		<div id="last_a">a</div> -->
+			<div>ALTMAN</div>
+		</div>
+		<div class="title_dev">
+			<div>Developer</div>
+		</div>
+		</h1>
+		
+	</div>
+
+	<div data-aos="fade-right">
+	<div id="about" class="page-section" class="container">
+		<div class="row stickem-container">
+
+			<div class="left" id="about_left"><h3>About</h3>
+				<img id="brian" src="images/brian.jpg">
+			</div>
+			<div class="right" id="about_right">
+				<img id="able_img" src="images/able.png">
+				<img id="able_img" src="images/able.png">
+				<img id="able_img" src="images/able.png">
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div id="work" class="page-section">
+		<div class="left" id="work_left"><h3>Work</h3></div>
+		<div class="right" id="work_right">
+			<!-- <div class="description" id="able_description"> -->
+				<div class="hexagon" id="able_hexagon">
+					<h4 href="target" data-hover="MORE">Able NYC</h4>
+					<h5>Handicap Accessibility Web Application</h5> 
+				</div>
+					
+				<img id="able_img" src="images/able.png">
+			<!-- </div> -->
+
+		</div>
+	</div>
+
+	<div id="contact" class="page-section">
+		<div class="left" id="contact_left"><h3>Contact</h3></div>
+		<div class="right" id="contact_right">
+			<div id="contact_header">
+				<h4>Lets get in touch!</h4>
+			</div>
+			<div class="contact_buttons" id="mail">
+				<img id="mail_image" src="images/mail.png">
+			</div>
+			<div class="contact_buttons" id="github">
+				<img id="github_image" src="images/github.png">
+			</div>
+			<div class="contact_buttons" id="linkedin">
+				<img id="linkedin_image" src="images/linkedin.png">
+			</div>
+			<div class="contact_buttons" id="facebook">
+				<img id="facebook_image" src="images/facebook.png">
+			</div>
+		</div>
+	</div>
+
 	<footer>©2016</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script src="javascript.js" type="text/javascript"></script>
 </body>
 </html>
