@@ -98,7 +98,7 @@ var titleBottom = new ScrollMagic.Scene({
 })
 .addTo(controller);
 
-var titleBottom = new ScrollMagic.Scene({
+var titleDev = new ScrollMagic.Scene({
 	triggerElement: '.top_letter',
 	offset: 100,
 	triggerHook: 0.1,
@@ -106,7 +106,7 @@ var titleBottom = new ScrollMagic.Scene({
 	// duration: 300
 })
 
-.setClassToggle('.title_dev','fade-bottom')
+.setClassToggle('#title_dev','fade-bottom')
 .addIndicators({
 	name: 'fade scene 3'
 })
@@ -203,6 +203,78 @@ var workScrollEnd = new ScrollMagic.Scene({
 	name: 'workScrollEnd'
 })
 .addTo(controller);
+
+// Rotating Image Gallery
+
+var imageRotatorAccess = {
+	
+	initialze: function() {
+
+		var itemCount = $(".rotatingimageable").length;
+
+		var currentItem = 0;
+
+		$(".rotatingimageable").eq(currentItem).fadeIn(1);
+
+		var loop = setInterval(function(){
+			$(".rotatingimageable").eq(currentItem).fadeOut(2500);
+			if(currentItem == itemCount -1){
+				currentItem = 0;
+			} else {
+				currentItem++;
+			}
+			$(".rotatingimageable").eq(currentItem).fadeIn(2500);
+			}, 5000);
+		}
+	};
+
+var imageRotatorMood = {
+	
+	initialze: function() {
+
+		var itemCount = $(".rotatingimagemood").length;
+
+		var currentItem = 0;
+
+		$(".rotatingimagemood").eq(currentItem).fadeIn(1);
+
+		var loop = setInterval(function(){
+			$(".rotatingimagemood").eq(currentItem).fadeOut(2500);
+			if(currentItem == itemCount -1){
+				currentItem = 0;
+			} else {
+				currentItem++;
+			}
+			$(".rotatingimagemood").eq(currentItem).fadeIn(2500);
+			}, 5000);
+		}
+	};
+
+var imageRotatorEcommerce = {
+	
+	initialze: function() {
+
+		var itemCount = $(".rotatingimageecommerce").length;
+
+		var currentItem = 0;
+
+		$(".rotatingimageecommerce").eq(currentItem).fadeIn(1);
+
+		var loop = setInterval(function(){
+			$(".rotatingimageecommerce").eq(currentItem).fadeOut(2500);
+			if(currentItem == itemCount -1){
+				currentItem = 0;
+			} else {
+				currentItem++;
+			}
+			$(".rotatingimageecommerce").eq(currentItem).fadeIn(2500);
+			}, 5000);
+		}
+	};
+
+imageRotatorAccess.initialze();
+imageRotatorMood.initialze();
+imageRotatorEcommerce.initialze();
 
 //Hover Hexagon Function
 
