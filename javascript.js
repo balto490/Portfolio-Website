@@ -4,6 +4,8 @@ $(document).ready(function() {
 		event.preventDefault();
 		var sectionID = $(this).attr("data-id");
 		scrollToID('#' + sectionID, 750);
+		$("#main_nav").fadeOut(200);
+		// $(".c-hamburger--htx").css('display','inline');
 	});
 	// scroll to top action
 	$('.scroll-top').on('click', function(event) {
@@ -78,9 +80,9 @@ var titleScene = new ScrollMagic.Scene({
 })
 
 .setClassToggle('.top_letter','fade-in')
-.addIndicators({
-	name: 'fade scene 1'
-})
+// .addIndicators({
+// 	name: 'fade scene 1'
+// })
 .addTo(controller);
 
 
@@ -93,9 +95,9 @@ var titleBottom = new ScrollMagic.Scene({
 })
 
 .setClassToggle('.bottom_letter','fade-bottom')
-.addIndicators({
-	name: 'fade scene 2'
-})
+// .addIndicators({
+// 	name: 'fade scene 2'
+// })
 .addTo(controller);
 
 var titleDev = new ScrollMagic.Scene({
@@ -107,9 +109,9 @@ var titleDev = new ScrollMagic.Scene({
 })
 
 .setClassToggle('#title_dev','fade-bottom')
-.addIndicators({
-	name: 'fade scene 3'
-})
+// .addIndicators({
+// 	name: 'fade scene 3'
+// })
 .addTo(controller);
 
 var titleAbout = new ScrollMagic.Scene({
@@ -121,9 +123,9 @@ var titleAbout = new ScrollMagic.Scene({
 })
 
 .setClassToggle('#about_left','fade-in')
-.addIndicators({
-	name: 'fade about'
-})
+// .addIndicators({
+// 	name: 'fade about'
+// })
 .addTo(controller);
 
 var titleWork = new ScrollMagic.Scene({
@@ -135,9 +137,9 @@ var titleWork = new ScrollMagic.Scene({
 })
 
 .setClassToggle('#work_left','fade-in')
-.addIndicators({
-	name: 'fade work'
-})
+// .addIndicators({
+// 	name: 'fade work'
+// })
 .addTo(controller);
 
 var titleContact = new ScrollMagic.Scene({
@@ -149,9 +151,9 @@ var titleContact = new ScrollMagic.Scene({
 })
 
 .setClassToggle('#contact_left','fade-in')
-.addIndicators({
-	name: 'fade contact'
-})
+// .addIndicators({
+// 	name: 'fade contact'
+// })
 .addTo(controller);
 
 var aboutScroll = new ScrollMagic.Scene({
@@ -162,9 +164,9 @@ var aboutScroll = new ScrollMagic.Scene({
 })
 
 .setClassToggle('#about_right','scroll')
-.addIndicators({
-	name: 'aboutScroll'
-})
+// .addIndicators({
+// 	name: 'aboutScroll'
+// })
 .addTo(controller);
 
 var aboutScrollEnd = new ScrollMagic.Scene({
@@ -174,9 +176,9 @@ var aboutScrollEnd = new ScrollMagic.Scene({
 })
 
 .setClassToggle('#about_right','scroll_end')
-.addIndicators({
-	name: 'aboutScrollEnd'
-})
+// .addIndicators({
+// 	name: 'aboutScrollEnd'
+// })
 .addTo(controller);
 
 var workScroll = new ScrollMagic.Scene({
@@ -187,9 +189,9 @@ var workScroll = new ScrollMagic.Scene({
 })
 
 .setClassToggle('#work_right','scroll')
-.addIndicators({
-	name: 'workScroll'
-})
+// .addIndicators({
+// 	name: 'workScroll'
+// })
 .addTo(controller);
 
 var workScrollEnd = new ScrollMagic.Scene({
@@ -199,9 +201,9 @@ var workScrollEnd = new ScrollMagic.Scene({
 })
 
 .setClassToggle('#work_right','scroll_end')
-.addIndicators({
-	name: 'workScrollEnd'
-})
+// .addIndicators({
+// 	name: 'workScrollEnd'
+// })
 .addTo(controller);
 
 // Rotating Image Gallery

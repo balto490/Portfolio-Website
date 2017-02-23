@@ -176,7 +176,7 @@ a {
 
 #title {
 	background-color: #3C3744;
-	height: 750px !important;
+	height: 750px;
 }
 
 #main_nav li {
@@ -1103,7 +1103,15 @@ footer {
 @media (max-width: 750px) {
 
 	#main_nav {
-		left: 65%;
+		left: 0;
+		width: 100%;
+	}
+
+	#post_nav_bar {
+		text-align: center;
+		padding-top: 200px;
+		padding-bottom: 250px;
+		background-color: #2659C9;
 	}
 
 	.top_letter div{
@@ -1145,6 +1153,162 @@ footer {
 
 
 	}
+
+/*Mobile Query*/
+
+@media (max-width: 500px)  {
+
+	#title {
+		width: 100%;
+		height: 732px;
+	}
+
+	.top_letter div{
+		font-size: 80px;
+		top: 100px;
+		left: 10%;
+	}
+
+	.bottom_letter div {
+		font-size: 80px;
+		top: 140px;
+		left: 14%;
+	}
+
+	#title_dev {
+		position: absolute;
+		top: 380px;
+		left: 24%;
+		opacity: 0;
+		font-size: 30px;
+		/*transform: translateY(0);*/
+		transition: all 1s ease-out;
+		color: #FAFAFA;
+		font-family: 'Knewave', cursive;
+	}
+
+	.rotatingimageable {
+		width: 100%;
+		display: none;
+		position: absolute;
+		left: 0%;
+		top: 2870px;
+	}
+
+	.rotatingimagemood {
+		width: 100%;
+		display: none;
+		position: absolute;
+		top: 3130px;
+		left: 0%;
+	}
+
+
+	.rotatingimageecommerce {
+		width: 100%;
+		display: none;
+		position: absolute;
+		top: 3390px;
+		left: 0%;
+	}
+
+	.hexagon {
+		display: none;
+	}
+
+	#contact_header {
+		position: relative;
+		top: 90px;
+		font-size: 30px;
+		width: 255px;
+	}
+
+	#contact_header h4 {
+		top: -50px;
+		position: relative;
+		color: #FAFAFA;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.about_content {
+		padding-left: 20%;
+		padding-right: 10%;
+	}
+
+	#mood_hexagon {
+		position: relative;
+		top: 180px;
+		left: 65%;
+		background-color: #2659C9;
+	}
+
+	#mood_hexagon h5 {
+		text-align: center;
+		font-size: 15px;
+		padding-top: 10px;
+		width: 100px;
+		margin-left: -27%;
+		color: #FAFAFA;
+	}
+
+	.circle {
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		background-color: #2659C9;
+		display: inline-block;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 15px;
+	}
+
+	#circles {
+		position: relative;
+		padding-left: 15%;
+	}
+
+	#brian {
+		display: none;
+	}
+
+	.contact_buttons {
+		position: relative;
+		display: inline-block;
+		top: 80px;
+		height: 36%;
+		width: 50%;
+		font-size: 0px;
+	}
+
+	#mail_image {
+		width: 88px;
+		position: absolute;
+		top: 80px;
+		left: 27%;
+	}
+	
+	#github_image {
+		width: 83px;
+		position: absolute;
+		top: 80px;
+		left: 29%;
+	}
+	
+	#linkedin_image {
+		width: 100px;
+		position: absolute;
+		top: 80px;
+		left: 25%;
+	}
+	
+	#facebook_image {
+		width: 100px;
+		position: absolute;
+		top: 80px;
+		left: 26%;
+	}
+
+}
 
 /*@media (max-width: 1150px) {
 	body {
